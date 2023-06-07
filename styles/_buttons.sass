@@ -1,4 +1,5 @@
 @import "variables"
+@import "mixins"
 
 button
   padding: 1.3rem 2.5rem
@@ -8,6 +9,8 @@ button
 
 .buttons
   display: flex
+  @include respond(tab-port)
+    margin-bottom: 5rem
 
 .bright
   background: $button-blue
@@ -23,7 +26,6 @@ button
   color: $text-gray-light
   background: transparent
   transition: all .3s ease
-  //box-shadow: 0 .5rem 1.5rem rgba($text-gray-light, .75)
   &:hover
     background: $button-blue-dark
     color: $white

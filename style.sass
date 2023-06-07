@@ -1,6 +1,7 @@
 @import 'styles/variables'
 @import 'styles/typography'
 @import "styles/buttons"
+@import "styles/mixins"
 
 *, ::after, ::before
   margin: 0
@@ -9,6 +10,10 @@
 
 html
   font-size: 62.5%
+  @include respond(tab-land)
+    font-size: 50%
+  @include respond(phone)
+    font-size: 40%
 
 body
   font-family: "Roboto Light", sans-serif
@@ -17,11 +22,16 @@ body
   width: 100%
   background: $background-blue-light
   display: flex
-  padding: 16rem 5rem
+  padding: 16rem 7rem
   &__images
     display: grid
     grid-template-columns: repeat(12, 5rem)
     grid-template-rows: repeat(4, 10.5rem)
+    @include respond(tab-port)
+      justify-content: center
+    @include respond(small-phone)
+      grid-template-columns: repeat(10, 5rem)
+      grid-template-rows: repeat(3, 10.5rem)
     &_1
       width: 10.7rem
       height: 21.4rem
@@ -29,6 +39,10 @@ body
       grid-row: 2/4
       z-index: 2
       filter: drop-shadow(0 2rem 4rem rgba(53, 60, 115, 0.15))
+      cursor: default
+      @include respond(small-phone)
+        width: 8rem
+        height: 16rem
     &_2
       width: 14.8rem
       height: 28rem
@@ -36,12 +50,28 @@ body
       grid-row: -1/-4
       z-index: 3
       filter: drop-shadow(0 2rem 4rem rgba(53, 60, 115, 0.15))
+      cursor: default
+      @include respond(small-phone)
+        width: 11.5rem
+        height: 22rem
+        grid-row: 2/4
     &_3
       width: 60.6rem
       height: 34.9rem
       grid-column: 1/-1
       grid-row: 1/-2
       filter: drop-shadow(0 2rem 4rem rgba(53, 60, 115, 0.15))
+      cursor: default
+      @include respond(small-phone)
+        width: 50rem
+        height: 28.8rem
   &__column
-    padding: 3rem 5rem 4rem 22rem
-
+    padding: 3rem 3rem 4rem 16rem
+    @include respond(tab-land)
+      padding: 5rem
+    @include respond(tab-port)
+      padding: 0
+  @include respond(tab-port)
+    flex-direction: column
+    padding: 10rem 10rem
+    margin: 0 auto

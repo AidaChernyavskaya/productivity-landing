@@ -32,6 +32,11 @@ button {
 .buttons {
   display: flex;
 }
+@media only screen and (max-width: 1020px) {
+  .buttons {
+    margin-bottom: 5rem;
+  }
+}
 
 .bright {
   background: #4C85FF;
@@ -66,6 +71,16 @@ button {
 html {
   font-size: 62.5%;
 }
+@media only screen and (max-width: 1240px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 40%;
+  }
+}
 
 body {
   font-family: "Roboto Light", sans-serif;
@@ -75,12 +90,23 @@ body {
   width: 100%;
   background: #F5F8FF;
   display: flex;
-  padding: 16rem 5rem;
+  padding: 16rem 7rem;
 }
 .app__images {
   display: grid;
   grid-template-columns: repeat(12, 5rem);
   grid-template-rows: repeat(4, 10.5rem);
+}
+@media only screen and (max-width: 1020px) {
+  .app__images {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .app__images {
+    grid-template-columns: repeat(10, 5rem);
+    grid-template-rows: repeat(3, 10.5rem);
+  }
 }
 .app__images_1 {
   width: 10.7rem;
@@ -89,6 +115,13 @@ body {
   grid-row: 2/4;
   z-index: 2;
   filter: drop-shadow(0 2rem 4rem rgba(53, 60, 115, 0.15));
+  cursor: default;
+}
+@media only screen and (max-width: 420px) {
+  .app__images_1 {
+    width: 8rem;
+    height: 16rem;
+  }
 }
 .app__images_2 {
   width: 14.8rem;
@@ -97,6 +130,14 @@ body {
   grid-row: -1/-4;
   z-index: 3;
   filter: drop-shadow(0 2rem 4rem rgba(53, 60, 115, 0.15));
+  cursor: default;
+}
+@media only screen and (max-width: 420px) {
+  .app__images_2 {
+    width: 11.5rem;
+    height: 22rem;
+    grid-row: 2/4;
+  }
 }
 .app__images_3 {
   width: 60.6rem;
@@ -104,9 +145,33 @@ body {
   grid-column: 1/-1;
   grid-row: 1/-2;
   filter: drop-shadow(0 2rem 4rem rgba(53, 60, 115, 0.15));
+  cursor: default;
+}
+@media only screen and (max-width: 420px) {
+  .app__images_3 {
+    width: 50rem;
+    height: 28.8rem;
+  }
 }
 .app__column {
-  padding: 3rem 5rem 4rem 22rem;
+  padding: 3rem 3rem 4rem 16rem;
+}
+@media only screen and (max-width: 1240px) {
+  .app__column {
+    padding: 5rem;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .app__column {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .app {
+    flex-direction: column;
+    padding: 10rem 10rem;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
