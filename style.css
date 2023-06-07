@@ -25,11 +25,38 @@
   font-size: 1.1rem;
   font-weight: bold;
 }
+.text__white_big {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: right;
+}
+.text__blue_big {
+  color: #5E80FF;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
 
 .title-5 {
   font-weight: bold;
   font-size: 1.4rem;
   color: #4074F8;
+}
+
+.title-3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 4.8rem;
+}
+.title-3_white {
+  color: white;
+  margin-bottom: 2.5rem;
+}
+.title-3_blue {
+  color: #5E80FF;
+  margin-bottom: 2.5rem;
 }
 
 button {
@@ -292,6 +319,37 @@ hr {
   left: 12rem;
   position: absolute;
   z-index: -5;
+}
+
+.numbers {
+  display: flex;
+}
+.numbers__bright {
+  background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+  padding: 6.6rem 9rem 6.6rem 37rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: all 0.5s;
+}
+.numbers__light {
+  background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+  padding: 6.6rem 37rem 6.6rem 9rem;
+  width: 50%;
+  transition: all 0.5s;
+}
+
+.speed {
+  width: 6.5rem;
+  height: 6.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.people {
+  width: 7.1rem;
+  height: 6.2rem;
+  margin-bottom: 2.5rem;
 }
 
 *, ::after, ::before {
