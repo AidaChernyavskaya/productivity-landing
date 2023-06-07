@@ -333,11 +333,41 @@ hr {
   align-items: flex-end;
   transition: all 0.5s;
 }
+@media only screen and (max-width: 1240px) {
+  .numbers__bright {
+    padding: 6.6rem 9rem 6.6rem 20rem;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .numbers__bright {
+    padding: 6.6rem 9rem 6.6rem 10rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .numbers__bright {
+    padding: 5rem;
+  }
+}
 .numbers__light {
   background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
   padding: 6.6rem 37rem 6.6rem 9rem;
   width: 50%;
   transition: all 0.5s;
+}
+@media only screen and (max-width: 1240px) {
+  .numbers__light {
+    padding: 6.6rem 20rem 6.6rem 9rem;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .numbers__light {
+    padding: 6.6rem 10rem 6.6rem 9rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .numbers__light {
+    padding: 5rem;
+  }
 }
 
 .speed {
