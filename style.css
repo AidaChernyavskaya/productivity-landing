@@ -137,6 +137,7 @@ button {
   .app__images_1 {
     width: 8rem;
     height: 16rem;
+    grid-column: 2/4;
   }
 }
 .app__images_2 {
@@ -152,6 +153,7 @@ button {
   .app__images_2 {
     width: 11.5rem;
     height: 22rem;
+    grid-column: 8/11;
     grid-row: 2/4;
   }
 }
@@ -165,8 +167,8 @@ button {
 }
 @media only screen and (max-width: 420px) {
   .app__images_3 {
-    width: 50rem;
-    height: 28.8rem;
+    width: 48.2rem;
+    height: 27.8rem;
   }
 }
 .app__column {
@@ -193,6 +195,16 @@ button {
 .about {
   padding: 9rem 25rem;
   text-align: center;
+}
+@media only screen and (max-width: 1240px) {
+  .about {
+    padding: 9rem 10rem;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .about {
+    padding: 9rem 5rem;
+  }
 }
 
 .icon {
@@ -221,6 +233,14 @@ button {
   align-items: center;
   margin-bottom: 5rem;
 }
+@media only screen and (max-width: 1020px) {
+  .features {
+    grid-template-columns: minmax(min-content, 28rem) 3rem minmax(min-content, 28rem);
+    grid-template-rows: auto auto;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+}
 
 .feature {
   display: grid;
@@ -234,6 +254,12 @@ hr {
   width: 3rem;
   height: 0;
   border: 0.1rem solid #E8ECF4;
+}
+
+@media only screen and (max-width: 1020px) {
+  .middle {
+    display: none;
+  }
 }
 
 *, ::after, ::before {

@@ -4,6 +4,10 @@
 .about
   padding: 9rem 25rem
   text-align: center
+  @include respond(tab-land)
+    padding: 9rem 10rem
+  @include respond(tab-port)
+    padding: 9rem 5rem
 
 .icon
   cursor: default
@@ -27,6 +31,11 @@
   justify-items: center
   align-items: center
   margin-bottom: 5rem
+  @include respond(tab-port)
+    grid-template-columns: minmax(min-content, 28rem) 3rem minmax(min-content, 28rem)
+    grid-template-rows: auto auto
+    justify-content: center
+    margin-bottom: 1rem
 
 .feature
   display: grid
@@ -39,3 +48,7 @@ hr
   width: 3rem
   height: 0
   border: .1rem solid $button-gray
+
+.middle
+  @include respond(tab-port)
+    display: none
