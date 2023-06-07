@@ -195,6 +195,7 @@ button {
 .about {
   padding: 9rem 25rem;
   text-align: center;
+  position: relative;
 }
 @media only screen and (max-width: 1240px) {
   .about {
@@ -260,6 +261,37 @@ hr {
   .middle {
     display: none;
   }
+}
+
+.clouds_1 {
+  width: 5.45rem;
+  height: 2.6rem;
+  top: 14rem;
+  left: 22rem;
+  position: absolute;
+  z-index: -5;
+}
+@media only screen and (max-width: 1020px) {
+  .clouds_1 {
+    top: 5rem;
+    left: 18rem;
+  }
+}
+.clouds_2 {
+  width: 11.6rem;
+  height: 6.2rem;
+  top: 20rem;
+  right: 7rem;
+  position: absolute;
+  z-index: -5;
+}
+.clouds_3 {
+  width: 11.4rem;
+  height: 5rem;
+  bottom: 20rem;
+  left: 12rem;
+  position: absolute;
+  z-index: -5;
 }
 
 *, ::after, ::before {

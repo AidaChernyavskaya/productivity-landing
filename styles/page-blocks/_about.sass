@@ -4,6 +4,7 @@
 .about
   padding: 9rem 25rem
   text-align: center
+  position: relative
   @include respond(tab-land)
     padding: 9rem 10rem
   @include respond(tab-port)
@@ -52,3 +53,29 @@ hr
 .middle
   @include respond(tab-port)
     display: none
+
+.clouds
+  &_1
+    width: 5.45rem
+    height: 2.6rem
+    top: 14rem
+    left: 22rem
+    position: absolute
+    z-index: -5
+    @include respond(tab-port)
+      top: 5rem
+      left: 18rem
+  &_2
+    width: 11.6rem
+    height: 6.2rem
+    top: 20rem
+    right: 7rem
+    position: absolute
+    z-index: -5
+  &_3
+    width: 11.4rem
+    height: 5rem
+    bottom: 20rem
+    left: 12rem
+    position: absolute
+    z-index: -5
