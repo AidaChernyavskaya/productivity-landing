@@ -1,3 +1,47 @@
-.title-1
-  color: red
-  font-size: 24px
+@import 'styles/variables'
+@import 'styles/typography'
+@import "styles/buttons"
+
+*, ::after, ::before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  font-size: 62.5%
+
+body
+  font-family: "Roboto Light", sans-serif
+
+.app
+  width: 100%
+  background: $background-blue-light
+  display: flex
+  padding: 16rem 5rem
+  &__images
+    display: grid
+    grid-template-columns: repeat(12, 5rem)
+    grid-template-rows: repeat(4, 10.5rem)
+    &_1
+      width: 10.7rem
+      height: 21.4rem
+      grid-column: 1/3
+      grid-row: 2/4
+      z-index: 2
+      filter: drop-shadow(0 2rem 4rem rgba(53, 60, 115, 0.15))
+    &_2
+      width: 14.8rem
+      height: 28rem
+      grid-column: 9/12
+      grid-row: -1/-4
+      z-index: 3
+      filter: drop-shadow(0 2rem 4rem rgba(53, 60, 115, 0.15))
+    &_3
+      width: 60.6rem
+      height: 34.9rem
+      grid-column: 1/-1
+      grid-row: 1/-2
+      filter: drop-shadow(0 2rem 4rem rgba(53, 60, 115, 0.15))
+  &__column
+    padding: 3rem 5rem 4rem 22rem
+

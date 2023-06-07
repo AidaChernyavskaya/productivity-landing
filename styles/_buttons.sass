@@ -1,0 +1,31 @@
+@import "variables"
+
+button
+  padding: 1.3rem 2.5rem
+  outline: none
+  border: none
+  cursor: pointer
+
+.buttons
+  display: flex
+
+.bright
+  background: $button-blue
+  color: $white
+  box-shadow: 0 .5rem 1.5rem rgba($text-gray-light, .75)
+  transition: all .3s ease
+  &:hover
+    background: $button-blue-dark
+    transform: translateY(-.5rem)
+
+.dim
+  border: .1rem solid $text-gray-light
+  color: $text-gray-light
+  background: transparent
+  transition: all .3s ease
+  //box-shadow: 0 .5rem 1.5rem rgba($text-gray-light, .75)
+  &:hover
+    background: $button-blue-dark
+    color: $white
+    border: .1rem solid $button-blue-dark
+    transform: translateY(-.5rem)
