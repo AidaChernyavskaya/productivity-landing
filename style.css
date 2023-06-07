@@ -3,7 +3,7 @@
   font-size: 1rem;
   text-transform: uppercase;
   color: #3D4F9F;
-  margin-bottom: 2.7rem;
+  margin-bottom: 2.5rem;
 }
 
 .title-2 {
@@ -11,7 +11,7 @@
   font-weight: 400;
   font-size: 3.6rem;
   color: #3D4F9F;
-  margin-bottom: 2.7rem;
+  margin-bottom: 2.5rem;
 }
 
 .text {
@@ -19,7 +19,17 @@
   font-size: 1.5rem;
   line-height: 3.5rem;
   color: #8D96BD;
-  margin-bottom: 6rem;
+}
+.text__grey_big {
+  color: #8D96BD;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.title-5 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #4074F8;
 }
 
 button {
@@ -36,6 +46,14 @@ button {
   .buttons {
     margin-bottom: 5rem;
   }
+}
+.buttons__about {
+  justify-content: center;
+  align-items: center;
+}
+.buttons__hr {
+  width: 2rem;
+  margin: 0 2rem;
 }
 
 .bright {
@@ -62,28 +80,26 @@ button {
   transform: translateY(-0.5rem);
 }
 
-*, ::after, ::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.red {
+  background: #FFD7D7;
+  color: #D43F3F;
+  transition: all 0.3s ease;
+}
+.red:hover {
+  color: white;
+  background: #D43F3F;
+  transform: translateY(-0.5rem);
 }
 
-html {
-  font-size: 62.5%;
+.blue {
+  background: #D2E1FF;
+  color: #4074F8;
+  transition: all 0.3s ease;
 }
-@media only screen and (max-width: 1240px) {
-  html {
-    font-size: 50%;
-  }
-}
-@media only screen and (max-width: 550px) {
-  html {
-    font-size: 40%;
-  }
-}
-
-body {
-  font-family: "Roboto Light", sans-serif;
+.blue:hover {
+  color: white;
+  background: #4D6CE1;
+  transform: translateY(-0.5rem);
 }
 
 .app {
@@ -172,6 +188,84 @@ body {
     padding: 10rem 10rem;
     margin: 0 auto;
   }
+}
+
+.about {
+  padding: 9rem 25rem;
+  text-align: center;
+}
+
+.icon {
+  cursor: default;
+}
+.icon__background {
+  width: 7rem;
+  height: 7rem;
+  background: #F5F8FF;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  grid-row: 1/2;
+}
+.icon__background:hover {
+  transform: scale(1.15);
+}
+
+.features {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: auto 3rem auto 3rem auto 3rem auto;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.feature {
+  display: grid;
+  grid-template-rows: 7rem max-content 20rem;
+  gap: 2rem;
+  justify-items: center;
+  align-items: start;
+}
+
+hr {
+  width: 3rem;
+  height: 0;
+  border: 0.1rem solid #E8ECF4;
+}
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 1240px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+body {
+  font-family: "Roboto Light", sans-serif;
+}
+
+.margin_bottom_7rem {
+  margin-bottom: 7rem;
+}
+
+.margin_bottom_6rem {
+  margin-bottom: 6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

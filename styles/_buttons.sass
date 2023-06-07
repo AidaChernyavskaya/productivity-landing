@@ -11,6 +11,13 @@ button
   display: flex
   @include respond(tab-port)
     margin-bottom: 5rem
+  &__about
+    justify-content: center
+    align-items: center
+  &__hr
+    width: 2rem
+    margin: 0 2rem
+
 
 .bright
   background: $button-blue
@@ -30,4 +37,22 @@ button
     background: $button-blue-dark
     color: $white
     border: .1rem solid $button-blue-dark
+    transform: translateY(-.5rem)
+
+.red
+  background: $button-red
+  color: $text-red
+  transition: all .3s ease
+  &:hover
+    color: $white
+    background: $text-red
+    transform: translateY(-.5rem)
+
+.blue
+  background: $button-blue-light
+  color: $text-active
+  transition: all .3s ease
+  &:hover
+    color: $white
+    background: $button-blue-dark
     transform: translateY(-.5rem)
