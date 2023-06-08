@@ -35,6 +35,8 @@ button
     &:hover
       background: $white
       transform: translateY(-.5rem)
+  &:active
+    transform: translateY(-.2rem)
 
 .dim
   border: .1rem solid $text-gray-light
@@ -51,6 +53,8 @@ button
     color: $button-blue-light
     border: .1rem solid $button-blue-light
     z-index: 5
+  &:active
+    transform: translateY(-.2rem)
 
 .red
   background: $button-red
@@ -61,6 +65,8 @@ button
     color: $white
     background: $text-red
     transform: translateY(-.5rem)
+  &:active
+    transform: translateY(-.2rem)
 
 .blue
   background: $button-blue-light
@@ -71,6 +77,8 @@ button
     color: $white
     background: $button-blue-dark
     transform: translateY(-.5rem)
+  &:active
+    transform: translateY(-.2rem)
 
 .dark
   background: $button-blue-dark
@@ -80,3 +88,5 @@ button
   transition: all .3s ease
   &:hover
     transform: translateY(-.5rem)
+  &:active
+    transform: translateY(-.2rem)

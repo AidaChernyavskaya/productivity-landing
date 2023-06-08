@@ -126,6 +126,9 @@ button {
   background: white;
   transform: translateY(-0.5rem);
 }
+.bright:active {
+  transform: translateY(-0.2rem);
+}
 
 .dim {
   border: 0.1rem solid #8E96B7;
@@ -145,6 +148,9 @@ button {
   border: 0.1rem solid #D2E1FF;
   z-index: 5;
 }
+.dim:active {
+  transform: translateY(-0.2rem);
+}
 
 .red {
   background: #FFD7D7;
@@ -156,6 +162,9 @@ button {
   color: white;
   background: #D43F3F;
   transform: translateY(-0.5rem);
+}
+.red:active {
+  transform: translateY(-0.2rem);
 }
 
 .blue {
@@ -169,6 +178,9 @@ button {
   background: #4D6CE1;
   transform: translateY(-0.5rem);
 }
+.blue:active {
+  transform: translateY(-0.2rem);
+}
 
 .dark {
   background: #4D6CE1;
@@ -179,6 +191,9 @@ button {
 }
 .dark:hover {
   transform: translateY(-0.5rem);
+}
+.dark:active {
+  transform: translateY(-0.2rem);
 }
 
 .app {
