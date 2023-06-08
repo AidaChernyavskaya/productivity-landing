@@ -5,6 +5,9 @@
   color: #3D4F9F;
   margin-bottom: 2.5rem;
 }
+.title-4__white {
+  color: white;
+}
 
 .title-2 {
   font-family: "Quicksand", sans-serif;
@@ -12,6 +15,10 @@
   font-size: 3.6rem;
   color: #3D4F9F;
   margin-bottom: 2.5rem;
+}
+.title-2__white {
+  color: white;
+  text-align: center;
 }
 
 .text {
@@ -24,6 +31,11 @@
   color: #8D96BD;
   font-size: 1.1rem;
   font-weight: bold;
+}
+.text__white {
+  color: white;
+  text-align: center;
+  margin-bottom: 5rem;
 }
 .text__white_big {
   color: white;
@@ -93,6 +105,14 @@ button {
   background: #4D6CE1;
   transform: translateY(-0.5rem);
 }
+.bright__white {
+  background: white;
+  color: #495274;
+}
+.bright__white:hover {
+  background: white;
+  transform: translateY(-0.5rem);
+}
 
 .dim {
   border: 0.1rem solid #8E96B7;
@@ -105,6 +125,10 @@ button {
   color: white;
   border: 0.1rem solid #4D6CE1;
   transform: translateY(-0.5rem);
+}
+.dim__blue {
+  color: #D2E1FF;
+  border: 0.1rem solid #D2E1FF;
 }
 
 .red {
@@ -165,6 +189,7 @@ button {
     width: 8rem;
     height: 16rem;
     grid-column: 2/4;
+    grid-row: 3/4;
   }
 }
 .app__images_2 {
@@ -380,6 +405,51 @@ hr {
   width: 7.1rem;
   height: 6.2rem;
   margin-bottom: 2.5rem;
+}
+
+.get-started {
+  background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9rem 35rem;
+  position: relative;
+  z-index: -10;
+}
+@media only screen and (max-width: 1240px) {
+  .get-started {
+    padding: 9rem 20rem;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .get-started {
+    padding: 9rem 10rem;
+  }
+}
+
+.clouds__blue_1 {
+  width: 22.4rem;
+  height: 13.4rem;
+  position: absolute;
+  top: 7.2rem;
+  left: 5.4rem;
+  z-index: -5;
+}
+.clouds__blue_2 {
+  width: 19rem;
+  height: 7rem;
+  position: absolute;
+  bottom: 5.6rem;
+  left: 11.1rem;
+  z-index: -6;
+}
+.clouds__blue_3 {
+  width: 42.5rem;
+  height: 18.6rem;
+  position: absolute;
+  right: 9rem;
+  bottom: 7rem;
+  z-index: -3;
 }
 
 *, ::after, ::before {
