@@ -6,13 +6,23 @@
   padding: 12rem 27rem
   align-items: center
   justify-content: center
+  @include respond(tab-land)
+    padding: 10rem 15rem
+  @include respond(tab-port)
+    padding: 10rem 5rem
+    flex-direction: column
   &__column
     &_1
       margin-right: 9rem
       width: 33rem
+      @include respond(tab-port)
+        width: auto
+        margin-right: 0
+        text-align: center
+        margin-bottom: 6rem
     &_2
-      display: flex
-      flex-direction: row
+      @include respond(small-phone)
+        margin: 0 auto
 
 .email
   width: 28rem
@@ -32,3 +42,6 @@
     border-bottom: .3rem solid $text-active
   &:focus:invalid
     border-bottom: .3rem solid $text-red
+  @include respond(small-phone)
+    width: 100%
+    margin-bottom: 2rem

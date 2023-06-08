@@ -6,6 +6,7 @@ button
   outline: none
   border: none
   cursor: pointer
+  font-size: 1.6rem
 
 .buttons
   display: flex
@@ -90,3 +91,5 @@ button
     transform: translateY(-.5rem)
   &:active
     transform: translateY(-.2rem)
+  @include respond(small-phone)
+    width: 100%
