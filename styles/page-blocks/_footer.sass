@@ -1,0 +1,39 @@
+@import "../mixins"
+@import '../variables'
+
+.footer
+  display: flex
+  flex-direction: column
+  padding: 10rem 12rem
+  &__line_1
+    display: grid
+    grid-template-columns: 3rem 70% 15rem max-content
+    gap: 4rem
+    align-items: center
+    margin-bottom: 3rem
+
+.logo
+  width: 2.6rem
+  height: 2.6rem
+  border-radius: 100%
+  background: $text-active-light
+  transition: all .3s ease
+  &:hover
+    transform: scale(1.1)
+
+a
+  font-family: 'Quicksand', sans-serif
+  font-size: 1.4rem
+  color: $text-unactive
+  text-decoration: none
+  &:not(:last-child)
+    margin-right: 4rem
+  &:hover
+    color: $text-active
+
+.social-networks
+  display: flex
+  justify-content: space-between
+  align-items: center
+  svg:hover
+    fill: $text-active

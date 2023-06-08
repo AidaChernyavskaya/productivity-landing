@@ -502,6 +502,7 @@ hr {
   padding: 12rem 27rem;
   align-items: center;
   justify-content: center;
+  background: #F5F8FF;
 }
 @media only screen and (max-width: 1240px) {
   .sign-up {
@@ -559,6 +560,52 @@ hr {
     width: 100%;
     margin-bottom: 2rem;
   }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 12rem;
+}
+.footer__line_1 {
+  display: grid;
+  grid-template-columns: 3rem 70% 15rem max-content;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 100%;
+  background: #5E80FF;
+  transition: all 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
+a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+  color: #697CA6;
+  text-decoration: none;
+}
+a:not(:last-child) {
+  margin-right: 4rem;
+}
+a:hover {
+  color: #4074F8;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-networks svg:hover {
+  fill: #4074F8;
 }
 
 *, ::after, ::before {
