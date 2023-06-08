@@ -24,12 +24,14 @@ button
   color: $white
   box-shadow: 0 .5rem 1.5rem rgba($text-gray-light, .75)
   transition: all .3s ease
+  border-radius: .5rem 0 0 .5rem
   &:hover
     background: $button-blue-dark
     transform: translateY(-.5rem)
   &__white
     background: $white
     color: $text-gray
+    z-index: 5
     &:hover
       background: $white
       transform: translateY(-.5rem)
@@ -39,6 +41,7 @@ button
   color: $text-gray-light
   background: transparent
   transition: all .3s ease
+  border-radius: 0 .5rem .5rem 0
   &:hover
     background: $button-blue-dark
     color: $white
@@ -47,11 +50,13 @@ button
   &__blue
     color: $button-blue-light
     border: .1rem solid $button-blue-light
+    z-index: 5
 
 .red
   background: $button-red
   color: $text-red
   transition: all .3s ease
+  border-radius: .5rem
   &:hover
     color: $white
     background: $text-red
@@ -61,7 +66,17 @@ button
   background: $button-blue-light
   color: $text-active
   transition: all .3s ease
+  border-radius: .5rem
   &:hover
     color: $white
     background: $button-blue-dark
+    transform: translateY(-.5rem)
+
+.dark
+  background: $button-blue-dark
+  color: $white
+  border-radius: .5rem
+  padding: 2rem 6rem
+  transition: all .3s ease
+  &:hover
     transform: translateY(-.5rem)

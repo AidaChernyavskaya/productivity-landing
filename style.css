@@ -7,6 +7,7 @@
 }
 .title-4__white {
   color: white;
+  z-index: 5;
 }
 
 .title-2 {
@@ -19,6 +20,7 @@
 .title-2__white {
   color: white;
   text-align: center;
+  z-index: 5;
 }
 
 .text {
@@ -36,6 +38,7 @@
   color: white;
   text-align: center;
   margin-bottom: 5rem;
+  z-index: 5;
 }
 .text__white_big {
   color: white;
@@ -71,6 +74,14 @@
   margin-bottom: 2.5rem;
 }
 
+.title-6 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #3D4F9F;
+  margin-bottom: 2rem;
+}
+
 button {
   padding: 1.3rem 2.5rem;
   outline: none;
@@ -100,6 +111,7 @@ button {
   color: white;
   box-shadow: 0 0.5rem 1.5rem rgba(142, 150, 183, 0.75);
   transition: all 0.3s ease;
+  border-radius: 0.5rem 0 0 0.5rem;
 }
 .bright:hover {
   background: #4D6CE1;
@@ -108,6 +120,7 @@ button {
 .bright__white {
   background: white;
   color: #495274;
+  z-index: 5;
 }
 .bright__white:hover {
   background: white;
@@ -119,6 +132,7 @@ button {
   color: #8E96B7;
   background: transparent;
   transition: all 0.3s ease;
+  border-radius: 0 0.5rem 0.5rem 0;
 }
 .dim:hover {
   background: #4D6CE1;
@@ -129,12 +143,14 @@ button {
 .dim__blue {
   color: #D2E1FF;
   border: 0.1rem solid #D2E1FF;
+  z-index: 5;
 }
 
 .red {
   background: #FFD7D7;
   color: #D43F3F;
   transition: all 0.3s ease;
+  border-radius: 0.5rem;
 }
 .red:hover {
   color: white;
@@ -146,10 +162,22 @@ button {
   background: #D2E1FF;
   color: #4074F8;
   transition: all 0.3s ease;
+  border-radius: 0.5rem;
 }
 .blue:hover {
   color: white;
   background: #4D6CE1;
+  transform: translateY(-0.5rem);
+}
+
+.dark {
+  background: #4D6CE1;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 2rem 6rem;
+  transition: all 0.3s ease;
+}
+.dark:hover {
   transform: translateY(-0.5rem);
 }
 
@@ -414,7 +442,6 @@ hr {
   align-items: center;
   padding: 9rem 35rem;
   position: relative;
-  z-index: -10;
 }
 @media only screen and (max-width: 1240px) {
   .get-started {
@@ -433,7 +460,6 @@ hr {
   position: absolute;
   top: 7.2rem;
   left: 5.4rem;
-  z-index: -5;
 }
 .clouds__blue_2 {
   width: 19rem;
@@ -441,7 +467,6 @@ hr {
   position: absolute;
   bottom: 5.6rem;
   left: 11.1rem;
-  z-index: -6;
 }
 .clouds__blue_3 {
   width: 42.5rem;
@@ -449,7 +474,44 @@ hr {
   position: absolute;
   right: 9rem;
   bottom: 7rem;
-  z-index: -3;
+}
+
+.sign-up {
+  display: flex;
+  padding: 12rem 27rem;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up__column_1 {
+  margin-right: 9rem;
+  width: 33rem;
+}
+.sign-up__column_2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.email {
+  width: 28rem;
+  height: 6rem;
+  outline: none;
+  border: none;
+  background: #E8ECF4;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  color: #495274;
+}
+.email::placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #495274;
+}
+.email:focus {
+  border-bottom: 0.3rem solid #4074F8;
+}
+.email:focus:invalid {
+  border-bottom: 0.3rem solid #D43F3F;
 }
 
 *, ::after, ::before {
