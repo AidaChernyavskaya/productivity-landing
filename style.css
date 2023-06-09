@@ -53,6 +53,9 @@
   font-weight: 600;
   font-size: 1.8rem;
 }
+.text__question {
+  font-size: 1.6rem;
+}
 
 .title-5 {
   font-weight: bold;
@@ -200,6 +203,23 @@ button {
   .dark {
     width: 100%;
   }
+}
+
+.grey {
+  background: #E8ECF4;
+  color: #495274;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  padding: 1.5rem 3rem;
+  transition: all 0.3s ease;
+}
+.grey:hover {
+  transform: translateY(-0.5rem);
+  background: #495274;
+  color: #E8ECF4;
+}
+.grey:active {
+  transform: translateY(-0.2rem);
 }
 
 .app {
@@ -681,9 +701,43 @@ a:hover {
   align-items: center;
   padding: 2rem;
   cursor: pointer;
+  user-select: none;
 }
 .question svg {
   margin-right: 2.5rem;
+}
+.question:hover p {
+  color: #495274;
+  font-weight: bold;
+}
+.question:hover svg path {
+  stroke: #495274;
+}
+
+.open svg path {
+  stroke: #495274;
+}
+.open svg {
+  transform: rotate(180deg);
+}
+.open p {
+  color: #495274;
+  font-weight: bold;
+}
+
+.answer {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem 2rem 6.3rem;
+  user-select: none;
+}
+.answer p {
+  margin-right: 6rem;
+  width: 55%;
+}
+.answer__open {
+  display: flex;
 }
 
 *, ::after, ::before {

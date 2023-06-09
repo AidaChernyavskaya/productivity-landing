@@ -13,4 +13,16 @@ const checkEmail = () => {
     };
 }
 
+const showQuestion = () => {
+    let questionsList = document.querySelectorAll(".question");
+    let answersList = document.querySelectorAll(".answer");
+    for(let i = 0; i < questionsList.length; i++){
+        questionsList[i].onclick = () => {
+            questionsList[i].classList.toggle('open');
+            answersList[i].classList.toggle('answer__open');
+        }
+    }
+}
+
 checkEmail();
+showQuestion();

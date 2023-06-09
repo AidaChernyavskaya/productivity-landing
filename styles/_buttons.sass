@@ -93,3 +93,17 @@ button
     transform: translateY(-.2rem)
   @include respond(small-phone)
     width: 100%
+
+.grey
+  background: $button-gray
+  color: $text-gray
+  font-size: 1.3rem
+  border-radius: .5rem
+  padding: 1.5rem 3rem
+  transition: all .3s ease
+  &:hover
+    transform: translateY(-.5rem)
+    background: $text-gray
+    color: $button-gray
+  &:active
+    transform: translateY(-.2rem)
