@@ -663,6 +663,29 @@ a:hover {
   }
 }
 
+.questions {
+  padding: 10rem 34rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.questions__block {
+  width: 100%;
+}
+.questions__block hr {
+  width: 100%;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  cursor: pointer;
+}
+.question svg {
+  margin-right: 2.5rem;
+}
+
 *, ::after, ::before {
   margin: 0;
   padding: 0;
