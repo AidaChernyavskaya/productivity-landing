@@ -27,6 +27,9 @@ const showQuestion = () => {
 const resourcesSwiper = () => {
     const swiper = new Swiper('.swiper', {
         loop: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        spaceBetween: 30,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",

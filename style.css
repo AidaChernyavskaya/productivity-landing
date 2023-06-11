@@ -946,6 +946,27 @@ a:hover {
   }
 }
 
+.feedback {
+  background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+  display: flex;
+  padding: 10rem 0 10rem 22rem;
+}
+.feedback__text {
+  width: 40%;
+  margin-right: 3rem;
+}
+.feedback__swiper {
+  width: 60%;
+}
+
+.comment {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 *, ::after, ::before {
   margin: 0;
   padding: 0;
