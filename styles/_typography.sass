@@ -1,4 +1,5 @@
 @import "variables"
+@import "mixins"
 
 .title-4
   font-weight: 500
@@ -20,6 +21,15 @@
     color: $white
     text-align: center
     z-index: 5
+  &__card
+    text-align: left
+    font-size: 3.8rem
+    margin-bottom: 2rem
+    @include respond(tab-port)
+      text-align: center
+      font-size: 3.2rem
+    @include respond(small-phone)
+      font-size: 2.4rem
 
 .text
   font-weight: 400
@@ -48,6 +58,9 @@
     font-size: 1.8rem
   &__question
     font-size: 1.6rem
+  &__card
+    text-align: justify
+    margin-bottom: 2rem
 
 .title-5
   font-weight: bold

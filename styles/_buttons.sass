@@ -18,6 +18,9 @@ button
   &__hr
     width: 2rem
     margin: 0 2rem
+  &__card
+    @include respond(tab-port)
+      margin-bottom: 1rem
 
 
 .bright
@@ -56,6 +59,11 @@ button
     z-index: 5
   &:active
     transform: translateY(-.2rem)
+  &__card
+    border: none
+    border-radius: .5rem
+    &:hover
+      border: none
 
 .red
   background: $button-red
