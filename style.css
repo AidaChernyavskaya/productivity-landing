@@ -850,13 +850,9 @@ a:hover {
 }
 @media only screen and (max-width: 1020px) {
   .card__images {
-    padding: 2rem 0;
-  }
-}
-@media only screen and (max-width: 550px) {
-  .card__images {
     grid-template-rows: repeat(2, 10rem);
     gap: 0.5rem;
+    padding: 2rem 0;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -893,7 +889,7 @@ a:hover {
   filter: drop-shadow(0 1.5rem 10rem #E5EBF8);
   cursor: default;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 1020px) {
   .resources_1 {
     width: 20.5rem;
     height: 20.5rem;
@@ -913,7 +909,7 @@ a:hover {
   filter: drop-shadow(0 1.5rem 10rem #E5EBF8);
   cursor: default;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 1020px) {
   .resources_2 {
     width: 10rem;
     height: 10rem;
@@ -933,7 +929,7 @@ a:hover {
   filter: drop-shadow(0 1.5rem 10rem #E5EBF8);
   cursor: default;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 1020px) {
   .resources_3 {
     width: 10rem;
     height: 10rem;
