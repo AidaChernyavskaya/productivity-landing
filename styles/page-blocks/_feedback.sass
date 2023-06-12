@@ -5,6 +5,10 @@
   background: $background-blue-light-gradient
   display: flex
   padding: 10rem 0 10rem 22rem
+  @include respond(tab-port)
+    padding: 10rem 0 10rem 5rem
+  @include respond(small-phone)
+    padding: 5rem 0 5rem 3rem
   &__text
     width: 40%
     margin-right: 3rem
@@ -19,6 +23,10 @@
   width: 40rem
   margin-bottom: 7rem
   box-shadow: .2rem .2rem .5rem rgba($text-gray-light, .5)
+  @include respond(tab-port)
+    width: 25rem
+  @include respond(small-phone)
+    width: 15rem
   &__text
     padding: 4.5rem 5rem
     position: relative
@@ -26,6 +34,9 @@
     text-align: left
     line-height: 2rem
     user-select: none
+    @include respond(tab-port)
+      padding: 4rem 2rem
+      text-align: center
   &__photo
     width: 6.2rem
     height: 6.2rem
@@ -33,9 +44,24 @@
     top: 13.5rem
     left: 17rem
     user-select: none
+    @include respond(tab-port)
+      top: 14.5rem
+      left: 9.5rem
+    @include respond(small-phone)
+      top: 25rem
+      left: 4.5rem
 
 .swiper2 .swiper-slide-active
   opacity: 1
 
 .swiper2 .swiper-slide-next
   opacity: .5
+
+.swiper2 .swiper-slide-prev
+  opacity: .5
+
+.swiper-pagination
+  span
+    @include respond(phone)
+      width: 5px
+      height: 5px

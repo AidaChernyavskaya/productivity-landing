@@ -951,6 +951,16 @@ a:hover {
   display: flex;
   padding: 10rem 0 10rem 22rem;
 }
+@media only screen and (max-width: 1020px) {
+  .feedback {
+    padding: 10rem 0 10rem 5rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .feedback {
+    padding: 5rem 0 5rem 3rem;
+  }
+}
 .feedback__text {
   width: 40%;
   margin-right: 3rem;
@@ -968,6 +978,16 @@ a:hover {
   margin-bottom: 7rem;
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(142, 150, 183, 0.5);
 }
+@media only screen and (max-width: 1020px) {
+  .comment {
+    width: 25rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .comment {
+    width: 15rem;
+  }
+}
 .comment__text {
   padding: 4.5rem 5rem;
   position: relative;
@@ -975,6 +995,12 @@ a:hover {
   text-align: left;
   line-height: 2rem;
   user-select: none;
+}
+@media only screen and (max-width: 1020px) {
+  .comment__text {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
 }
 .comment__photo {
   width: 6.2rem;
@@ -984,6 +1010,18 @@ a:hover {
   left: 17rem;
   user-select: none;
 }
+@media only screen and (max-width: 1020px) {
+  .comment__photo {
+    top: 14.5rem;
+    left: 9.5rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .comment__photo {
+    top: 25rem;
+    left: 4.5rem;
+  }
+}
 
 .swiper2 .swiper-slide-active {
   opacity: 1;
@@ -991,6 +1029,17 @@ a:hover {
 
 .swiper2 .swiper-slide-next {
   opacity: 0.5;
+}
+
+.swiper2 .swiper-slide-prev {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 550px) {
+  .swiper-pagination span {
+    width: 5px;
+    height: 5px;
+  }
 }
 
 *, ::after, ::before {
