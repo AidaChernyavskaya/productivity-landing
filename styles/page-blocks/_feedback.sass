@@ -12,10 +12,30 @@
     width: 60%
 
 .comment
-  background: $white
   display: flex
   justify-content: center
   align-items: center
   text-align: center
+  width: 40rem
+  margin-bottom: 7rem
+  box-shadow: .2rem .2rem .5rem rgba($text-gray-light, .5)
+  &__text
+    padding: 4.5rem 5rem
+    position: relative
+    background: $white
+    text-align: left
+    line-height: 2rem
+    user-select: none
+  &__photo
+    width: 6.2rem
+    height: 6.2rem
+    position: absolute
+    top: 13.5rem
+    left: 17rem
+    user-select: none
 
+.swiper2 .swiper-slide-active
+  opacity: 1
 
+.swiper2 .swiper-slide-next
+  opacity: .5

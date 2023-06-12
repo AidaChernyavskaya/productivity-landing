@@ -24,21 +24,30 @@ const showQuestion = () => {
     }
 }
 
-const resourcesSwiper = () => {
-    const swiper = new Swiper('.swiper', {
+const createSwipers = () => {
+    const swiper1 = new Swiper('.swiper1', {
         loop: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        spaceBetween: 30,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
         pagination: {
-            el: ".swiper-pagination",
+            el: ".swiper-pagination1",
         },
         mousewheel: true,
         keyboard: true,
+    });
+
+    const swiper2 = new Swiper('.swiper2', {
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 1.5,
+        spaceBetween: 52,
+        pagination: {
+            el: ".swiper-pagination2",
+            clickable: true,
+        },
+        mousewheel: true,
     });
 }
 
@@ -46,4 +55,4 @@ const resourcesSwiper = () => {
 
 checkEmail();
 showQuestion();
-resourcesSwiper();
+createSwipers();
