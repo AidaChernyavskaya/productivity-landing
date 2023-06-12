@@ -1,0 +1,30 @@
+@import "../mixins"
+@import '../variables'
+
+.companies
+  display: flex
+  justify-content: space-between
+  padding: 5rem 27rem
+  @include respond(tab-land)
+    padding: 5rem 15rem
+  @include respond(tab-port)
+    padding: 5rem 10rem
+    display: grid
+    grid-template-rows: repeat(2, 5rem)
+    grid-template-columns: repeat(3, 15rem)
+    justify-items: center
+    align-items: center
+    justify-content: center
+    align-content: center
+    gap: 2rem
+  @include respond(small-phone)
+    grid-template-rows: repeat(3, 5rem)
+    grid-template-columns: repeat(2, 15rem)
+    padding: 5rem
+  img
+    cursor: pointer
+    &:hover
+      filter: brightness(.3)
+    @include respond(tab-port)
+      width: 12rem
+      height: 4rem

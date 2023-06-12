@@ -1038,6 +1038,49 @@ a:hover {
   }
 }
 
+.companies {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 27rem;
+}
+@media only screen and (max-width: 1240px) {
+  .companies {
+    padding: 5rem 15rem;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .companies {
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-rows: repeat(2, 5rem);
+    grid-template-columns: repeat(3, 15rem);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .companies {
+    grid-template-rows: repeat(3, 5rem);
+    grid-template-columns: repeat(2, 15rem);
+    padding: 5rem;
+  }
+}
+.companies img {
+  cursor: pointer;
+}
+.companies img:hover {
+  filter: brightness(0.3);
+}
+@media only screen and (max-width: 1020px) {
+  .companies img {
+    width: 12rem;
+    height: 4rem;
+  }
+}
+
 *, ::after, ::before {
   margin: 0;
   padding: 0;
