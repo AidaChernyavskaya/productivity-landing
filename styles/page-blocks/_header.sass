@@ -1,0 +1,62 @@
+@import "../mixins"
+@import '../variables'
+
+
+.header__content
+  display: grid
+  grid-template-columns: 3rem 1fr 15rem max-content
+  gap: 4rem
+  align-items: center
+  margin-bottom: 2rem
+  margin-top: 2rem
+  //@include respond(tab-port)
+  //  grid-template-columns: 3rem 15rem max-content
+  //  grid-template-rows: max-content max-content
+  //  justify-content: center
+  @include respond(small-phone)
+    grid-template-columns: min-content
+    grid-template-rows: repeat(4,max-content)
+    justify-content: center
+
+.header__logo
+  width: 2.6rem
+  height: 2.6rem
+  border-radius: 100%
+  background: $text-active-light
+  transition: all .3s ease
+  &:hover
+    transform: scale(1.1)
+  //@include respond(tab-port)
+  //  grid-column: 1/2
+  @include respond(small-phone)
+    grid-row: 1/2
+
+.header__links
+  //@include respond(tab-port)
+  //  grid-column: 1/-1
+  //  grid-row: 2/-1
+  @include respond(small-phone)
+    grid-row: 2/3
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: min-content min-content
+
+a
+  font-family: 'Quicksand', sans-serif
+  font-size: 1.4rem
+  color: $text-unactive
+  text-decoration: none
+  margin-bottom: 1rem
+  &:not(:last-child)
+    margin-right: 4rem
+  &:hover
+    color: $text-active
+
+.header__social-networks
+  display: flex
+  justify-content: space-between
+  align-items: center
+  svg:hover
+    fill: $text-active
+  @include respond(small-phone)
+    grid-row: 3/4
