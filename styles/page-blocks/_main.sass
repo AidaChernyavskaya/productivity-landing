@@ -1,0 +1,115 @@
+@import "../mixins"
+@import '../variables'
+
+.main
+  background: $background-blue-light-gradient
+  text-align: center
+  position: relative
+  p
+    line-height: 3rem
+  &__text
+    padding-top: 6rem
+    width: 40%
+    margin: 0 auto
+  &__icon
+    width: 5.2rem
+    height: 5.2rem
+    margin: 3rem auto 0 auto
+    position: relative
+    z-index: 5
+  &__clouds
+    display: block
+    width: 100%
+    height: 100%
+    &_1
+      cursor: default
+      width: 4.5rem
+      height: 2.5rem
+      position: absolute
+      top: 6rem
+      left: 23rem
+    &_2
+      cursor: default
+      width: 11.2rem
+      height: 6.7rem
+      position: absolute
+      top: 0
+      right: 12rem
+    &_3
+      cursor: default
+      width: 7.45rem
+      height: 8.1rem
+      position: absolute
+      top: 15.3rem
+      left: 0
+    &_4
+      cursor: default
+      width: 7.4rem
+      height: 3.7rem
+      position: absolute
+      top: 30rem
+      left: 25rem
+    &_5
+      cursor: default
+      width: 15.4rem
+      height: 6.8rem
+      position: absolute
+      top: 45rem
+      right: 25rem
+    &_6
+      cursor: default
+      width: 5.5rem
+      height: 5.5rem
+      position: absolute
+      top: 40rem
+      right: 0
+      overflow: hidden
+  &__graphic
+    &_line
+      margin-top: -12rem
+      margin-bottom: 4.6rem
+      width: 98.8vw
+      height: 32.5rem
+      cursor: default
+      filter: drop-shadow(0 2rem 2rem #4444dd)
+  &__button
+    background: $white
+    border: .2rem solid $icon-active
+    width: 1.5rem
+    height: 1.5rem
+    border-radius: 100%
+    cursor: pointer
+    &_1
+      position: absolute
+      bottom: 4.4rem
+      left: 10rem
+    &_2
+      position: absolute
+      bottom: 7.6rem
+      left: 50rem
+    &_3
+      position: absolute
+      bottom: 22.5rem
+      right: 50rem
+    &_4
+      position: absolute
+      bottom: 34.8rem
+      right: 10rem
+
+.speed_icon_background
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 60% 75%, 50% 85%, 40% 75%, 0% 75%)
+  width: 9.2rem
+  height: 6.8rem
+  background: $white
+  filter: drop-shadow(.1rem .5rem .5rem $text)
+  margin-top: -6rem
+  margin-left: -4rem
+  display: none
+
+.speed_icon_close
+  display: block
+
+.speed_icon
+  transform: translateY(16%)
+  width: 3.5rem
+  height: 3.5rem

@@ -105,6 +105,14 @@
   margin-bottom: 2rem;
 }
 
+.title-1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 4.8rem;
+  color: #3D4F9F;
+  margin-bottom: 2.5rem;
+}
+
 button {
   padding: 1.3rem 2.5rem;
   outline: none;
@@ -1079,6 +1087,138 @@ a:hover {
     width: 12rem;
     height: 4rem;
   }
+}
+
+.main {
+  background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+  text-align: center;
+  position: relative;
+}
+.main p {
+  line-height: 3rem;
+}
+.main__text {
+  padding-top: 6rem;
+  width: 40%;
+  margin: 0 auto;
+}
+.main__icon {
+  width: 5.2rem;
+  height: 5.2rem;
+  margin: 3rem auto 0 auto;
+  position: relative;
+  z-index: 5;
+}
+.main__clouds {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main__clouds_1 {
+  cursor: default;
+  width: 4.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 6rem;
+  left: 23rem;
+}
+.main__clouds_2 {
+  cursor: default;
+  width: 11.2rem;
+  height: 6.7rem;
+  position: absolute;
+  top: 0;
+  right: 12rem;
+}
+.main__clouds_3 {
+  cursor: default;
+  width: 7.45rem;
+  height: 8.1rem;
+  position: absolute;
+  top: 15.3rem;
+  left: 0;
+}
+.main__clouds_4 {
+  cursor: default;
+  width: 7.4rem;
+  height: 3.7rem;
+  position: absolute;
+  top: 30rem;
+  left: 25rem;
+}
+.main__clouds_5 {
+  cursor: default;
+  width: 15.4rem;
+  height: 6.8rem;
+  position: absolute;
+  top: 45rem;
+  right: 25rem;
+}
+.main__clouds_6 {
+  cursor: default;
+  width: 5.5rem;
+  height: 5.5rem;
+  position: absolute;
+  top: 40rem;
+  right: 0;
+  overflow: hidden;
+}
+.main__graphic_line {
+  margin-top: -12rem;
+  margin-bottom: 4.6rem;
+  width: 98.8vw;
+  height: 32.5rem;
+  cursor: default;
+  filter: drop-shadow(0 2rem 2rem #4444dd);
+}
+.main__button {
+  background: white;
+  border: 0.2rem solid #6188FF;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.main__button_1 {
+  position: absolute;
+  bottom: 4.4rem;
+  left: 10rem;
+}
+.main__button_2 {
+  position: absolute;
+  bottom: 7.6rem;
+  left: 50rem;
+}
+.main__button_3 {
+  position: absolute;
+  bottom: 22.5rem;
+  right: 50rem;
+}
+.main__button_4 {
+  position: absolute;
+  bottom: 34.8rem;
+  right: 10rem;
+}
+
+.speed_icon_background {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 60% 75%, 50% 85%, 40% 75%, 0% 75%);
+  width: 9.2rem;
+  height: 6.8rem;
+  background: white;
+  filter: drop-shadow(0.1rem 0.5rem 0.5rem #8D96BD);
+  margin-top: -6rem;
+  margin-left: -4rem;
+  display: none;
+}
+
+.speed_icon_close {
+  display: block;
+}
+
+.speed_icon {
+  transform: translateY(16%);
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 *, ::after, ::before {

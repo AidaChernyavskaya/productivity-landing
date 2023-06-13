@@ -24,6 +24,16 @@ const showQuestion = () => {
     }
 }
 
+const showIcon = () => {
+    let buttonsList = document.querySelectorAll(".main__button");
+    let iconsList = document.querySelectorAll(".speed_icon_background");
+    for(let i = 0; i < buttonsList.length; i++){
+        buttonsList[i].onclick = () => {
+            iconsList[i].classList.toggle('speed_icon_close');
+        }
+    }
+}
+
 const createSwipers = () => {
     const swiper1 = new Swiper('.swiper1', {
         loop: true,
@@ -56,3 +66,4 @@ const createSwipers = () => {
 checkEmail();
 showQuestion();
 createSwipers();
+showIcon();
