@@ -1096,11 +1096,18 @@ a:hover {
 }
 .main p {
   line-height: 3rem;
+  position: relative;
+  z-index: 4;
 }
 .main__text {
   padding-top: 6rem;
   width: 40%;
   margin: 0 auto;
+}
+@media (max-width: 1500px) {
+  .main__text {
+    width: 60%;
+  }
 }
 .main__icon {
   width: 5.2rem;
@@ -1163,13 +1170,27 @@ a:hover {
   right: 0;
   overflow: hidden;
 }
+.main__graphic {
+  position: relative;
+  z-index: 4;
+}
 .main__graphic_line {
   margin-top: -12rem;
   margin-bottom: 4.6rem;
-  width: 98.8vw;
+  width: 97.8vw;
   height: 32.5rem;
   cursor: default;
   filter: drop-shadow(0 2rem 2rem #4444dd);
+}
+@media only screen and (max-width: 1020px) {
+  .main__graphic_line {
+    width: 96vw;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .main__graphic_line {
+    width: 94vw;
+  }
 }
 .main__button {
   background: white;
@@ -1178,26 +1199,95 @@ a:hover {
   height: 1.5rem;
   border-radius: 100%;
   cursor: pointer;
+  position: relative;
+  z-index: 6;
 }
 .main__button_1 {
   position: absolute;
   bottom: 4.4rem;
   left: 10rem;
 }
+@media only screen and (max-width: 1020px) {
+  .main__button_1 {
+    left: 3rem;
+  }
+}
 .main__button_2 {
   position: absolute;
   bottom: 7.6rem;
-  left: 50rem;
+  left: 45rem;
+}
+@media only screen and (min-width: 1800px) {
+  .main__button_2 {
+    left: 66rem;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .main__button_2 {
+    left: 35rem;
+  }
+}
+@media (max-width: 750px) {
+  .main__button_2 {
+    left: 25rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .main__button_2 {
+    left: 17rem;
+  }
 }
 .main__button_3 {
   position: absolute;
-  bottom: 22.5rem;
-  right: 50rem;
+  bottom: 23rem;
+  right: 45rem;
+}
+@media only screen and (min-width: 1800px) {
+  .main__button_3 {
+    right: 66rem;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .main__button_3 {
+    right: 32rem;
+  }
+}
+@media (max-width: 750px) {
+  .main__button_3 {
+    right: 22rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .main__button_3 {
+    right: 13rem;
+  }
 }
 .main__button_4 {
   position: absolute;
-  bottom: 34.8rem;
-  right: 10rem;
+  bottom: 35.5rem;
+  right: 7rem;
+}
+@media only screen and (min-width: 1800px) {
+  .main__button_4 {
+    bottom: 36rem;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .main__button_4 {
+    right: 2rem;
+    bottom: 36rem;
+  }
+}
+@media (max-width: 600px) {
+  .main__button_4 {
+    right: 1rem;
+    bottom: 36rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .main__button_4 {
+    right: 0;
+  }
 }
 
 .speed_icon_background {
@@ -1209,6 +1299,22 @@ a:hover {
   margin-top: -6rem;
   margin-left: -4rem;
   display: none;
+}
+@media only screen and (max-width: 1240px) {
+  .speed_icon_background {
+    margin-left: -2rem;
+    width: 5rem;
+  }
+}
+@media (max-width: 600px) {
+  .speed_icon_background {
+    margin-left: -3rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .speed_icon_background {
+    margin-left: -3.8rem;
+  }
 }
 
 .speed_icon_close {

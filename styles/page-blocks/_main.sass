@@ -7,10 +7,14 @@
   position: relative
   p
     line-height: 3rem
+    position: relative
+    z-index: 4
   &__text
     padding-top: 6rem
     width: 40%
     margin: 0 auto
+    @media (max-width : 1500px)
+      width: 60%
   &__icon
     width: 5.2rem
     height: 5.2rem
@@ -65,13 +69,20 @@
       right: 0
       overflow: hidden
   &__graphic
+    position: relative
+    z-index: 4
     &_line
       margin-top: -12rem
       margin-bottom: 4.6rem
-      width: 98.8vw
+      width: 97.8vw
       height: 32.5rem
       cursor: default
       filter: drop-shadow(0 2rem 2rem #4444dd)
+      @include respond(tab-port)
+        width: 96vw
+      @include respond(small-phone)
+        width: 94vw
+
   &__button
     background: $white
     border: .2rem solid $icon-active
@@ -79,22 +90,52 @@
     height: 1.5rem
     border-radius: 100%
     cursor: pointer
+    position: relative
+    z-index: 6
     &_1
       position: absolute
       bottom: 4.4rem
       left: 10rem
+      @include respond(tab-port)
+        left: 3rem
     &_2
       position: absolute
       bottom: 7.6rem
-      left: 50rem
+      left: 45rem
+      @include respond(big-screen)
+        left: 66rem
+      @include respond(tab-port)
+        left: 35rem
+      @media (max-width : 750px)
+        left: 25rem
+      @include respond(small-phone)
+        left: 17rem
     &_3
       position: absolute
-      bottom: 22.5rem
-      right: 50rem
+      bottom: 23rem
+      right: 45rem
+      @include respond(big-screen)
+        right: 66rem
+      @include respond(tab-port)
+        right: 32rem
+      @media (max-width : 750px)
+        right: 22rem
+      @include respond(small-phone)
+        right: 13rem
     &_4
       position: absolute
-      bottom: 34.8rem
-      right: 10rem
+      bottom: 35.5rem
+      right: 7rem
+      @include respond(big-screen)
+        bottom: 36rem
+      @include respond(tab-port)
+        right: 2rem
+        bottom: 36rem
+      @media (max-width : 600px)
+        right: 1rem
+        bottom: 36rem
+      @include respond(small-phone)
+        right: 0
 
 .speed_icon_background
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 60% 75%, 50% 85%, 40% 75%, 0% 75%)
@@ -105,6 +146,13 @@
   margin-top: -6rem
   margin-left: -4rem
   display: none
+  @include respond(tab-land)
+    margin-left: -2rem
+    width: 5rem
+  @media (max-width: 600px)
+    margin-left: -3rem
+  @include respond(small-phone)
+    margin-left: -3.8rem
 
 .speed_icon_close
   display: block
