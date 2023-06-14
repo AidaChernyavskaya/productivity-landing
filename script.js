@@ -34,6 +34,19 @@ const showIcon = () => {
     }
 }
 
+const showMenu = () => {
+    let menuBtn = document.querySelector('.menu-btn');
+    let menu = document.querySelector('.menu');
+    menuBtn.addEventListener('click', function(){
+        menu.classList.toggle('active');
+        menuBtn.classList.toggle('btn-active');
+    })
+    menu.addEventListener('click', function(){
+        menu.classList.remove('active');
+        menuBtn.classList.remove('btn-active');
+    })
+}
+
 const createSwipers = () => {
     const swiper1 = new Swiper('.swiper1', {
         loop: true,
@@ -67,3 +80,4 @@ checkEmail();
 showQuestion();
 createSwipers();
 showIcon();
+showMenu();

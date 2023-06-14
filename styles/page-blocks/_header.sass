@@ -1,7 +1,6 @@
 @import "../mixins"
 @import '../variables'
 
-
 .header__content
   display: grid
   grid-template-columns: 3rem 1fr 15rem max-content
@@ -9,14 +8,7 @@
   align-items: center
   margin-bottom: 2rem
   margin-top: 2rem
-  //@include respond(tab-port)
-  //  grid-template-columns: 3rem 15rem max-content
-  //  grid-template-rows: max-content max-content
-  //  justify-content: center
-  @include respond(small-phone)
-    grid-template-columns: min-content
-    grid-template-rows: repeat(4,max-content)
-    justify-content: center
+  padding: 0 1rem
 
 .header__logo
   width: 2.6rem
@@ -26,20 +18,9 @@
   transition: all .3s ease
   &:hover
     transform: scale(1.1)
-  //@include respond(tab-port)
-  //  grid-column: 1/2
-  @include respond(small-phone)
-    grid-row: 1/2
-
-.header__links
-  //@include respond(tab-port)
-  //  grid-column: 1/-1
-  //  grid-row: 2/-1
-  @include respond(small-phone)
-    grid-row: 2/3
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr
-    grid-template-rows: min-content min-content
+  @media (max-width: 730px)
+    width: 3rem
+    height: 3rem
 
 a
   font-family: 'Quicksand', sans-serif
@@ -58,5 +39,74 @@ a
   align-items: center
   svg:hover
     fill: $text-active
-  @include respond(small-phone)
-    grid-row: 3/4
+  @media (max-width: 730px)
+    display: none
+
+.header__button
+  @media (max-width: 730px)
+    display: none
+
+.header__links
+  @media (max-width: 730px)
+    display: none
+
+.menu
+  position: fixed
+  z-index: 20
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  padding: 1.5rem
+  background: $white
+  transform: translateX(-100%)
+  transition: transform 0.5s
+
+.menu.active
+  transform: translateX(0)
+
+.menu li
+  list-style-type: none
+  &:not(:last-child)
+    margin-bottom: 2rem
+
+.menu ul
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-top: 15rem
+  a
+    font-size: 2.2rem
+
+
+.menu-btn
+  display: none
+  @media (max-width: 730px)
+    display: block
+    width: 3rem
+    height: 3rem
+    position: relative
+    z-index: 22
+    overflow: hidden
+    grid-column: -2/-1
+
+.menu-btn span
+  width: 3rem
+  height: .2rem
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  background-color: $text-headers
+  transition: all 0.5s
+
+.menu-btn span:nth-of-type(2)
+  top: calc(50% - 1rem)
+
+.menu-btn span:nth-of-type(3)
+  top: calc(50% + 1rem)
+
+.menu-btn.btn-active
+  position: fixed
+  top: 2rem
+  right: 1rem
